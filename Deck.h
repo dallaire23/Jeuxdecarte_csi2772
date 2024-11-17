@@ -1,9 +1,10 @@
 #include <iostream>
 #include <vector>
-#include "card.h"
-#include "cardtype.h"
-#include "cardFactory.h"
+#include "Card.h"
+
 using namespace std;
+
+class CardFactory;
 
 class Deck : public vector<Card *>
 {
