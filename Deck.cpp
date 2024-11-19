@@ -1,6 +1,6 @@
 #include "Deck.h"
 
-Deck::Deck(istream &in, const CardFactory *factory)
+Deck::Deck(istream &in, const cardFactory *factory)
 {
     // Implémentation du constructeur
 }
