@@ -1,3 +1,6 @@
+#ifndef CARD_H
+#define CARD_H
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -229,3 +232,5 @@ public:
         out << 'G';
     }
 };
+
+#endif // CARD_H

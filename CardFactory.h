@@ -1,3 +1,5 @@
+#ifndef CARD_FACTORY_H
+#define CARD_FACTORY_H
 #include <iostream>
 #include <vector>
 #include "Card.h"
@@ -22,3 +24,5 @@ public:
     static CardFactory *getFactory(); // Méthode pour obtenir l'instance singleton
     Deck getDeck();                   // Méthode pour obtenir un Deck
 };
+
+#endif // CARD_FACTORY_H
