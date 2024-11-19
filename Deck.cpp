@@ -1,7 +1,7 @@
 #include "Deck.h"
 #include "CardFactory.h"
 
-Deck::Deck(istream &in, const cardFactory *factory)
+Deck::Deck(istream &in, const CardFactory *factory)
 {
     string cardName;
     while (in >> cardName)
