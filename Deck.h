@@ -1,13 +1,17 @@
+#ifndef DECK_H
+#define DECK_H
 #include <iostream>
 #include <vector>
-#include "card.h"
-#include "cardtype.h"
-#include "cardFactory.h"
+#include "Card.h"
+
 using namespace std;
+
+class CardFactory;
 
 class Deck : public vector<Card *>
 {
 public:
+    Deck() = default;
     // Constructeur qui accepte un flux d'entrée et un pointeur vers une fabrique de cartes
     Deck(istream &in, const CardFactory *factory);
 
@@ -17,3 +21,4 @@ public:
     // Surcharge de l'opérateur d'insertion pour insérer toutes les cartes du deck dans un flux
     friend ostream &operator<<(ostream &out, const Deck &deck);
 };
+#endif // DECK_H
